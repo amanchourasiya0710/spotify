@@ -1,7 +1,21 @@
+@font-face {
+    font-family: Spotify;
+    src: url(GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: Spotify-Light;
+    src: url(GothamBook.ttf);
+}
+
 body {
     margin: 0;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Spotify, sans-serif;
+}
+
+.spotify {
+    display: flex;
 }
 
 .sidebar {
@@ -17,18 +31,18 @@ body {
 }
 
 .logodivision > img {
-    width: 42%;
+    width: 35%;
 }
 
 .home {
     padding-left: 24px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .home > img {
-    width: 40px;
+    width: 26px;
     vertical-align: middle;
     margin-right: 12px;
 }
@@ -36,9 +50,54 @@ body {
 .sidebarbottom {
     position: absolute;
     bottom: 0;
+    margin: 0 0 15px 10px;
 }
 
 .sidebarbottom > div {
     margin-bottom: 14px;
     padding-left: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.mainwindow {
+    height: 100vh;
+    width: calc(100% - 400px);
+    background-color: #1e1e1e;
+}
+
+.card {
+    width: 170px;
+    height: 310px;
+    /* border: 2px solid red; */
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #151515;
+    color: white;
+    text-align: center;
+    margin: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card > img {
+    width: 158px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+.title {
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+}
+
+.description {
+    line-height: 16px;
+    font-size: 14px;
+    font-family: Spotify-Light;
+    color: #a9a9a9;
+}
+
+.song-cards {
+    display: flex;
+    flex-wrap: wrap;
 }

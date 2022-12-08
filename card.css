@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Spotify;
+    src: url(GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: Spotify-Light;
+    src: url(GothamLight.ttf);
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: Spotify, sans-serif;
+}
+
+.card {
+    width: 170px;
+    height: 310px;
+    border: 2px solid red;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #151515;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card > img {
+    width: 158px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+.title {
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+}
+
+.description {
+    line-height: 16px;
+    font-size: 14px;
+    font-family: Spotify-Light;
+}
